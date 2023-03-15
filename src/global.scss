@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap');
+
 $hq-primary-color: #021C40;
 $hq-secondary-color: #262515;
 $hq-white: #ffffff;
@@ -27,7 +29,7 @@ body {
     -moz-font-smoothing: antialiased;
     -o-font-smoothing: antialiased;
     text-rendering: optimizeSpeed;
-    font-family: "PadaukRegular";
+    font-family: 'Jost', sans-serif;
     color: whitesmoke;
     background-color: rgb(255, 255, 255);
     scroll-behavior: smooth !important;
