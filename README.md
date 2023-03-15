@@ -1,6 +1,6 @@
 ## octernship-assesment
 
-This is a Fullstack Web Application , created by Taiwo Boluwatife [`Blyncnov`](https://blyncnov.com/).
+Submission by Taiwo Boluwatife [`Blyncnov`](https://pro-blyncnov.vercel.app/).
 
 ```bash
 octernship-assesment submission
@@ -14,7 +14,7 @@ Live Site URl : [octernship-assesment](https://octernship-assesment.vercel.app)
 
 I started this `Project` by bootraping React js and then installing scss .. I started by making the folder structure for views and down to every part of it
 
-## 💩Shameshack Was Built With
+## Stack
 
 - React js
 - React Router Dom
