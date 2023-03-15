@@ -1,0 +1,192 @@
+$hq-primary-color: #021C40;
+$hq-secondary-color: #262515;
+$hq-white: #ffffff;
+$hq-black: #000000;
+$hq-link: #1b7356;
+$hq-label: #061f48;
+$hq-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+$hq-deep-shadow: 0 1px 3px rgb(51 71 91 / 15%);
+$hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
+
+.hq-app-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hq-app-text-container {
+    h2 {
+        font-size: 30px;
+        color: #ffffff;
+    }
+}
+
+.hq-app-container {
+    border: 0.01px solid rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+    position: relative;
+    width: 50%;
+    padding: 2rem 1.5rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    background-color: #131116;
+
+    @media (max-width: 768px) {
+        width: 100%;
+        max-width: 95%;
+    }
+}
+
+.hq-app-text-container {
+    h2 {
+        font-size: 30px;
+        color: #ffffff;
+    }
+
+    p {
+        font-size: 16px;
+        color: #ffffff;
+        margin: 0.5em 0;
+    }
+}
+
+.hq-app-form-container {
+    width: 100%;
+    margin: 2.5em 0;
+
+    .hq-app-form {
+        width: 100%;
+
+        input {
+            width: 100% !important;
+            border-radius: 2.5px;
+            background: rgba(12, 48, 93, 0.022);
+            color: #ffffff;
+            width: 100%;
+            padding: 13px 10px;
+            font-size: 14px;
+            border: 1.5px solid rgba(99, 105, 121, 0.6);
+            font-weight: 600;
+            line-height: inherit;
+            margin: 0;
+            vertical-align: baseline;
+            font-family: "Urbanist", sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+            overflow-y: auto;
+
+            &:focus {
+                outline: none;
+                background-color: none;
+            }
+
+            &::placeholder {
+                color: #ffffff !important;
+            }
+
+            &::-webkit-input-placeholder {
+                /* Edge */
+                color: green;
+            }
+
+            &:-ms-input-placeholder {
+                /* Internet Explorer 10-11 */
+                color: ffffff;
+            }
+        }
+
+        button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            white-space: nowrap;
+            padding: 1em 2em;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-weight: 700;
+            letter-spacing: 0.3px;
+            line-height: 1.5;
+            font-size: 16px;
+            line-height: 1.133;
+            text-align: center;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            box-shadow: $hq-shadow;
+            background-color: $hq-primary-color;
+            color: $hq-white;
+            border-width: 1px;
+            border-style: solid;
+            border-color: transparent;
+            transition: all 0.1s ease-in;
+
+            &:hover {
+                -o-font-smoothing: antialiased;
+                text-rendering: optimizeSpeed;
+                -moz-font-smoothing: antialiased;
+            }
+        }
+    }
+}
+
+.mask-image {
+    aspect-ratio: 1.536;
+    max-width: 110%;
+    min-width: 385px;
+    -webkit-mask-image: linear-gradient(180deg, #000 15%, transparent 65%);
+    mask-image: linear-gradient(180deg, #000 15%, transparent 65%);
+}
+
+.hq-app-image-container {
+    width: 200px;
+
+    image {
+        width: 100%;
+    }
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    white-space: nowrap;
+    padding: 1em 2em;
+    margin: 15px 0;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.133;
+    text-align: center;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    box-shadow: $hq-shadow;
+    background-color: $hq-primary-color;
+    color: $hq-white;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    transition: all 0.1s ease-in;
+
+    &:hover {
+        -o-font-smoothing: antialiased;
+        text-rendering: optimizeSpeed;
+        -moz-font-smoothing: antialiased;
+    }
+}
