@@ -15,24 +15,25 @@ $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #131116;
 }
 
 .hq-app-text-container {
     h2 {
         font-size: 30px;
-        color: #ffffff;
+        color: #131116;
     }
 }
 
 .hq-app-container {
     border: 0.01px solid rgba(255, 255, 255, 0.08);
-    border-radius: 4px;
+    border-radius: 2px;
     position: relative;
     width: 50%;
     padding: 2rem 1.5rem;
     max-width: 35rem;
     margin: 0 auto;
-    background-color: #131116;
+    background-color: #ffffff;
 
     @media (max-width: 768px) {
         width: 100%;
@@ -43,12 +44,12 @@ $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
 .hq-app-text-container {
     h2 {
         font-size: 30px;
-        color: #ffffff;
+        color: #131116;
     }
 
     p {
         font-size: 16px;
-        color: #ffffff;
+        color: #131116;
         margin: 0.5em 0;
     }
 }
@@ -64,7 +65,7 @@ $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
             width: 100% !important;
             border-radius: 2.5px;
             background: rgba(12, 48, 93, 0.022);
-            color: #ffffff;
+            color: #131116;
             width: 100%;
             padding: 13px 10px;
             font-size: 14px;
@@ -86,17 +87,17 @@ $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
             }
 
             &::placeholder {
-                color: #ffffff !important;
+                color: #131116 !important;
             }
 
             &::-webkit-input-placeholder {
                 /* Edge */
-                color: green;
+                color: #131116;
             }
 
             &:-ms-input-placeholder {
                 /* Internet Explorer 10-11 */
-                color: ffffff;
+                color: #131116;
             }
         }
 
@@ -109,7 +110,7 @@ $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
             white-space: nowrap;
             padding: 1em 2em;
             margin: 15px 0;
-            border-radius: 4px;
+            border-radius: 3px;
             font-weight: 700;
             letter-spacing: 0.3px;
             line-height: 1.5;
@@ -189,4 +190,14 @@ button {
         text-rendering: optimizeSpeed;
         -moz-font-smoothing: antialiased;
     }
+}
+
+
+.error_modal {
+    width: 100%;
+    color: white;
+    background-color: red;
+    border-radius: 1.5px;
+    padding: .8em 1em;
+    margin: 1em 0;
 }

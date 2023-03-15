@@ -7,3 +7,33 @@ $hq-label: #061f48;
 $hq-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 $hq-deep-shadow: 0 1px 3px rgb(51 71 91 / 15%);
 $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering: optimizeSpeed;
+    font-family: "PadaukRegular";
+    color: whitesmoke;
+    background-color: rgb(255, 255, 255);
+    scroll-behavior: smooth !important;
+    scroll-timeline: inherit;
+}
+
+a {
+    color: inherit;
+}

@@ -7,3 +7,64 @@ $hq-label: #061f48;
 $hq-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
 $hq-deep-shadow: 0 1px 3px rgb(51 71 91 / 15%);
 $hq-layout-bgcolor: rgba(215, 255, 234, 0.009);
+
+.playground_container {
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playground {
+    width: 100%;
+    color: #262515;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 20px;
+}
+
+
+.card {
+    position: relative;
+    width: 100px;
+    padding: 1em 2em;
+    height: 50px;
+    color: #262515;
+    background-color: white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+
+    .h_word {
+        color: inherit;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .h_icon {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        padding: 1em;
+        top: 1px;
+        right: 1px;
+        color: red;
+        // background-color: red;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+}

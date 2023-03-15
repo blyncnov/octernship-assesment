@@ -5,6 +5,7 @@ import "./Setup.scss";
 
 export default function Home(): JSX.Element {
   const [chooseWord, setchooseWord] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
   const navigate = useNavigate();
 
@@ -16,12 +17,23 @@ export default function Home(): JSX.Element {
     // Set Loading to be True
     setchooseWord(true);
 
-    // Get Nickname value
-    const Nickname: string = event.target.nickname.value.trim();
+    // Get My_Word value
+    const My_Word: string = event.target.word.value.trim();
 
-    // Do Nothing is Nickname is empty
-    if (!Nickname) {
-      return;
+    // Reusable error function
+    function LaunchErrorModal() {
+      setchooseWord(false);
+      setTimeout(() => {
+        setHasError(true);
+      }, 1000);
+
+      // return to false
+      setHasError(false);
+    }
+
+    // Do Nothing is My_Word is empty
+    if (!My_Word) {
+      return LaunchErrorModal();
     }
 
     setTimeout(() => {
@@ -29,10 +41,10 @@ export default function Home(): JSX.Element {
       setchooseWord(false);
 
       // Save to Local Storage
-      localStorage.setItem("nickname", Nickname);
+      localStorage.setItem("word", My_Word);
 
       // Set back to empty String
-      event.target.nickname.value = "";
+      event.target.word.value = "";
 
       // Push to Start hq page
       navigate("/playground");
@@ -48,6 +60,13 @@ export default function Home(): JSX.Element {
               <h2>Please Choose a Word</h2>
             </div>
             <div className="hq-app-form-container">
+              {hasError && (
+                <>
+                  <div className="error_modal">
+                    <p>Please provide a non-empty value</p>
+                  </div>
+                </>
+              )}
               <form
                 className="hq-app-form"
                 method="POST"
@@ -56,13 +75,13 @@ export default function Home(): JSX.Element {
                 <input
                   type="text"
                   name="nickname"
-                  id="nickname"
+                  id="word"
                   placeholder="Please Start typing ..."
                   onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
                     e.target.value
                   }
                 />
-                <button>{!chooseWord ? "Continue" : "Loading..."}</button>
+                <button>{!chooseWord ? "Submit" : "Loading..."}</button>
               </form>
             </div>
           </div>
